@@ -44,6 +44,7 @@ justify-content: space-between;
 align-items: center;
 `
 const ItemText = styled.div`
+
 padding-top: 10vh;
  text-align: center;
 `
