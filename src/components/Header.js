@@ -17,8 +17,9 @@ function Header() {
             <RightMenu>
                 <a href="#">shop</a>
                 <a href="#">Tesla Account</a>
-
+                <CustomMenu />
             </RightMenu>
+
         </Container>
     )
 }
@@ -30,6 +31,7 @@ min-height: 60px;
 position: fixed;
 display: flex;
 align-items: center;
+justify-content: space-between;
 padding: 0 20px;
 top:0; 
 left: 0;
@@ -46,6 +48,9 @@ p{
     padding: 0 10px;
     flex-wrap: nowrap;
 }
+@media(max-width: 768px){
+    display: none;
+}
 `
 const RightMenu = styled.div`
 a{
@@ -56,3 +61,6 @@ a{
     margin-right: 10px; 
 }
 `
+const CustomMenu = styled(MenuIcon)`
+Cursor: pointer;
+ `
